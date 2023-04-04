@@ -1,0 +1,253 @@
+@import"templatecolours.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column ; 
+    background-color: white;
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: purple;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-transform: none;
+    color: purple;
+    margin-left: 40px;
+}
+.logo:hover{
+    color: pink;
+    transition: 3s ease-in;
+}
+ul li{
+    display: inline-block;
+    margin-right: 10px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+}
+ul li a:hover{
+    color: pink;
+    transition: 3s ease-in;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    font-size: 20px;
+    border: 1px solid white;
+    background: transparent; 
+    padding: 5px 10px;
+    border-radius:5px;
+}
+.button:hover{
+    border:1px solid pink;
+    transition: 3s ease-in;
+
+}
+
+section{
+    background-color: pink;
+}
+aside{
+    background-color: plum;
+}
+article{
+    background-color: palevioletred;
+}
+h1,h2,h3,h4{
+    color: purple;
+}
+w3-quarter a{
+    background-color: purple;
+}
+ .category-title a{
+    color: purple;
+}
+/* TEXT STYLING */
+h1{
+    font-family: 'Roboto' sans-serif;
+    font-weight: 300;
+}
+
+
+p,h2,h3,h4,a{
+    font-family:'Roboto' sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: purple;
+}
+h3,h4,h5{
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+}
+
+
+/* cookies setting */
+.cookies-container{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: black;
+    color: white;
+    padding: 0 32px;
+    box-shadow: rgba(47, 54, 64);
+    transition: 400ms;
+}
+.cookie-container.active{
+bottom: 0;
+}
+    
+.cookie-container a{
+    color: palevioletred;
+}
+.cookie-container p{
+    color: purple;
+}
+.cookie-btn{
+    border: 0;
+    padding: 12px;
+    cursor: pointer;
+    background-color: pink;
+    color: purple;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1600px){
+    .container{
+        width: 100%;
+
+    }
+} @media (max-width: 1024px) {
+    .cookies{
+        padding: 10px;
+    }
+}  
+footer{
+    
+    background: plum;
+    height: auto;
+    width: 100%;
+    font-family: "open sans";
+    padding-top: 40px;
+    color: purple;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1rem 0 3rem 0;
+}
+.socials a{
+    text-decoration: none;
+    color: purple;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover{
+    color: plum;
+
+}
+.footer-bottom{
+    background: white;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none;
+    background-color: #e6e6e6;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
